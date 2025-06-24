@@ -1,0 +1,29 @@
+// {
+//     "compilerOptions": {
+//         "typeRoots": [
+//             "./node_modules/@types",
+//             "./types"
+//         ]
+//     }
+// }
+{
+    "compilerOptions": {
+        "target": "ESNext", // Définit la version ECMAScript cible
+        "module": "ESNext", // Utilise ES modules
+        "declaration": true, // Génère les fichiers .d.ts
+        "outDir": "dist", // Stocke les fichiers compilés dans dist/
+        "strict": true, // Active des vérifications strictes de TypeScript
+        "jsx": "react-jsx", // Compatible avec React
+        "moduleResolution": "node", // Résout les modules comme Node.js
+        "esModuleInterop": true, // Permet d'importer CommonJS avec ES Modules
+        "skipLibCheck": true, // Ignore la vérification des types des fichiers de librairies
+        "forceConsistentCasingInFileNames": true // Évite les erreurs dues à la casse des fichiers
+    },
+    "include": [
+        "src"
+    ], // Inclut le dossier source
+    "exclude": [
+        "node_modules",
+        "dist"
+    ] // Exclut les dossiers inutiles
+}

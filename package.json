@@ -1,13 +1,35 @@
 {
   "name": "react-modal-xm",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "private": false,
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/",
+    "src/",
+    "index.js",
+    "package.json",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reivax8560/react-modal-xm.git"
+  },
+  "keywords": [
+    "react",
+    "vite",
+    "component",
+    "modal"
+  ],
+  "author": "Xavier Martin",
+  "license": "ISC",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",

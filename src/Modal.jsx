@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 import './Modal.css'
 
-export default function Modal(props) {
+function Modal(props) {
 
   const { isBackgroundDisplayed, classBackgroundColor, title, message, closureFunction, closureIconSize, classModal = "classModal-default", classTitle = "classTitle-default", classMessage = "classMessage-default" } = props
 
@@ -35,3 +35,5 @@ export default function Modal(props) {
     </div>
   )
 }
+
+export default Modal
