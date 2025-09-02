@@ -4,13 +4,26 @@ import './Modal.css'
 
 function Modal(props) {
 
-  const { isBackgroundDisplayed, classBackgroundColor, title, message, closureFunction, closureIconSize, classModal = "classModal-default", classTitle = "classTitle-default", classMessage = "classMessage-default" } = props
+  const { 
+    isBackgroundDisplayed, 
+    backgroundColor, 
+    title, 
+    message, 
+    closureFunction, 
+    closureIconSize, 
+    classModal = "classModal-default", 
+    classTitle = "classTitle-default", 
+    classMessage = "classMessage-default" 
+  } = props
 
 
 
   return (
 
-    <div className={isBackgroundDisplayed ? "classBg-default" : ''} style={{ background: classBackgroundColor }} >
+    <div 
+    className={isBackgroundDisplayed ? "classBackground-default" : ''} 
+    style={{ background: backgroundColor }} 
+    >
 
       <div className={classModal} >
 

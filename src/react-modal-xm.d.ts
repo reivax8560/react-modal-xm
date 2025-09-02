@@ -17,8 +17,3 @@ declare module "react-modal-xm" {
 }
 
 
-
-
-// declare module 'react-modal-xm' {
-//     export const Modal: any;
-// }

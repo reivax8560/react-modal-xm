@@ -1,20 +1,19 @@
 {
-  "name": "react-modal-xm",
+  "name": "@reivax8560/react-modal-xm",
   "private": false,
-  "version": "1.0.0",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "version": "1.0.3",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
   "files": [
-    "dist/",
-    "src/",
-    "index.js",
-    "package.json",
-    "README.md"
+    "dist",
+    "src"
   ],
+  "resolutions": {
+    "styled-components": "^5"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/reivax8560/react-modal-xm.git"
+    "url": "git+https://github.com/reivax8560/react-modal-xm.git"
   },
   "keywords": [
     "react",
@@ -35,18 +34,22 @@
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
+    "motion": "^12.23.12",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "styled-components": "^6.1.19"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
     "@vitejs/plugin-react": "^4.4.1",
+    "autoprefixer": "^10.4.21",
     "eslint": "^9.25.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^16.0.0",
+    "rollup-plugin-postcss": "^4.0.2",
     "vite": "^6.3.5"
   }
 }
